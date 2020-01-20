@@ -1,0 +1,46 @@
+.grade {
+   display: grid;
+   grid-template-columns: 3fr 3fr 2fr;
+   grid-gap: 20px;
+   padding: 100px 20px;   
+   
+}
+
+.card {
+    grid-column: 1 / 5s;
+    max-width: 240px;
+    padding: 20px 0;        
+    transition: cursor 1s, transform 1s ease-in 100ms;
+}
+
+.card:hover {    
+    transform: rotateX(180deg) scale(1.2, 1.2);    
+    cursor: pointer;
+}
+
+img.magoNegro:hover {    
+    animation: magoNegro 3s;
+}
+
+@keyframes magoNegro {
+    from {content: url("img/carta_virada.png")}
+    to {content: url("img/carta_mago_negro.jpg")}
+}
+
+img.olhosAzuis:hover {    
+    animation: olhosAzuis 3s;
+}
+
+@keyframes olhosAzuis {
+    from {content: url("img/carta_virada.png")}
+    to {content: url("img/card_olhos_azuis.jpg")}
+}
+
+img.kuriboh:hover {    
+    animation: kuriboh 3s;    
+}
+
+@keyframes kuriboh {
+    from {content: url("img/carta_virada.png")}
+    to {content: url("img/card_kuriboh.png")}
+}
